@@ -1,0 +1,82 @@
+/* Estilo para el contenedor del título */
+.main-header {
+    background-color: #0d0e12; /* Un gris casi negro muy elegante */
+    color: #00c3ff;            /* Letras blancas */
+    padding: 60px 20px;        /* Espacio arriba/abajo y a los lados */
+    margin-bottom: 30px;       /* Separa el header del resto del contenido */
+    border-bottom: 2px solid #333; /* Línea divisoria sutil */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Sombra para dar profundidad */
+}
+
+/* Estilo específico para el texto h1 */
+.main-header h1 {
+    margin: 0;                 /* Quitamos el margen por defecto para controlar el espacio con el padding del padre */
+    font-size: 2.5rem;         /* Tamaño de letra más grande y potente */
+    text-transform: uppercase; /* Todo en mayúsculas para un look más arcade */
+    letter-spacing: 3px;       /* Un poco de espacio entre letras */
+}
+
+/* Configuración general del cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía más moderna */
+    margin: 0;
+    padding: 0;
+    background-color: #1a1c22; /* Un gris azulado muy suave. Hace que las tarjetas blancas resalten */
+    color: #e0e0e0;
+    text-align: center;
+}
+
+/* El contenedor de los videos */
+.video-grid {
+    display: flex;          /* Activa el modo fila */
+    flex-wrap: wrap;        /* Permite que los videos bajen si no hay espacio */
+    justify-content: center; /* Centra los videos horizontalmente */
+    gap: 20px;              /* Espacio de 20px entre cada cuadro */
+    padding: 20px;
+}
+
+/* Estilo de cada tarjeta de video */
+.video-card {
+    text-decoration: none;  /* Quita el subrayado azul del link */
+    color: #ffffff;            /* Color del texto */
+    background: #252830;      /* Fondo blanco para que resalte */
+    border-radius: 20px;    /* Bordes redondeados */
+    overflow: hidden;       /* Corta la imagen si se sale del borde */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Sombra suave */
+    transition: transform 0.3s ease; /* Efecto suave al pasar el mouse */
+    width: 300px;           /* Ancho fijo para que coincida con la imagen */
+    border: 1px solid #333; /* Un borde fino para separar la tarjeta del fondo */
+}
+
+/* Efecto al pasar el mouse (Interacción) */
+.video-card:hover {
+    transform: translateY(-10px); /* El video sube un poquito */
+    border-color: #00c3ff; /* Al pasar el mouse, el borde se ilumina azul */
+    box-shadow: 0 15px 40px rgba(0, 195, 255, 0.2); /* La sombra se intensifica */
+}
+
+.video-card img {
+    display: block;     /* Quita espacios vacíos debajo de la imagen */
+    width: 100%;        /* La imagen ocupa todo el ancho de la tarjeta */
+    filter: brightness(0.9);
+    transition: filter 0.3s;
+    height: auto;       /* Mantiene la proporción original de la foto */
+}
+
+.video-card p {
+    padding: 15px;      /* Separa el texto de los bordes internos */
+    font-weight: bold;  /* Pone el texto en negrita */
+    margin: 0;          /* Quita espacios extra que vienen por defecto */
+    background-color: #252830
+}
+
+
+
+
+footer {
+    background-color: #0d0e12;
+    color: #777;
+    padding: 40px;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+}

@@ -1,0 +1,13 @@
+# Extensiones de VS Code y configuración local
+.vscode/
+.history/
+*.log
+
+# Archivos del sistema (Muy importante en tu MacBook)
+.DS_Store
+Thumbs.db
+
+# Temporales de Node o Python (por si acaso los usas luego)
+node_modules/
+__pycache__/
+*.pyc
