@@ -17,20 +17,30 @@
         <section class="video-container">
             <h3>Juegos de la semana</h3>
             <div class="video-grid">
-                <a href="https://www.youtube.com/watch?v=RkC0l4iekYo" target="_blank" class="video-card">
-                    <img src="https://img.youtube.com/vi/RkC0l4iekYo/maxresdefault.jpg" alt="Miniatura Video 1">
-                    <p>Estación Arcade PS5</p>
-                </a>
+                <div class="video-card">
+                    <video width="100%" controls>
+                        <source src="paginas/videos/ps5.mp4" type="video/mp4">
+                    </video>
+                    <p>Consola PS5</p>
+                </div>
 
-                <a href="https://www.youtube.com/watch?v=0QeqO0kFz-E" target="_blank" class="video-card">
-                    <img src="https://img.youtube.com/vi/0QeqO0kFz-E/maxresdefault.jpg" alt="Miniatura Video 2">
-                    <p>Gameplay Pro</p>
-                </a>
+                <div class="video-card">
+                    <video width="100%" controls>
+                        <source src="paginas/videos/nintendo.mp4" type="video/mp4">
+                    </video>
+                    <p>Nintendo</p>
+                </div>
 
-                <a href="https://www.youtube.com/watch?v=FIVmyOIV1MQ" target="_blank" class="video-card">
-                    <img src="https://img.youtube.com/vi/FIVmyOIV1MQ/maxresdefault.jpg" alt="Miniatura Video 3">
-                    <p>Unboxing Especial</p>
-                </a>
+                <div class="video-card">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed?v=vy4TsXf1cyM"
+                        title="Unboxing ROG Ally X" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <p>Unboxing xbox</p>
+                </div>
+
+
             </div>
         </section>
 
@@ -68,6 +78,37 @@
             </div>
 
         </section>
+
+        <section class="contact-container" id="contacto">
+            <h3>Contacto</h3>
+            <div class="contact-form-wrapper">
+                <form action="agradecimientos.html" method="GET">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4"
+                            placeholder="¿En qué podemos ayudarte?"></textarea>
+                    </div>
+
+                    <button type="submit" class="send-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <footer>
