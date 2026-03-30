@@ -145,10 +145,92 @@ body {
 
 
 
+
+.contact-container {
+    padding: 60px 20px;
+    max-width: 600px; /* Limitamos el ancho */
+    margin: 0 auto;   /* Centramos el bloque completo */
+}
+
+.contact-form-wrapper {
+    background-color: #252830; /* El mismo gris que las tarjetas */
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #333;
+    text-align: left; /* Texto alineado a la izquierda para los labels */
+}
+
+.form-group label {
+    display: block;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    color: #00c3ff; /* Azul neón para los títulos de los campos */
+    font-weight: bold;
+}
+
+.send-btn:hover {
+    background-color: #00cc6d;
+    transform: translateY(+2px);
+}
+
+
+
 footer {
     background-color: #0d0e12;
     color: #777;
     padding: 40px;
     margin-top: 60px;
     border-top: 1px solid #333;
+}
+
+
+
+/* --- ESTILOS PÁGINA DE AGRADECIMIENTO --- */
+
+.thanks-body {
+    background-color: #1a1c22;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.thanks-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.thanks-card {
+    background-color: #252830;
+    padding: 50px;
+    border-radius: 15px;
+    border: 2px solid #00c3ff;
+    box-shadow: 0 0 25px rgba(0, 195, 255, 0.2);
+    max-width: 500px;
+}
+
+.thanks-card h1 {
+    color: #00ff88;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.back-home-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #00c3ff;
+    color: #1a1c22;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-home-btn:hover {
+    background-color: #00ff88;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
 }
